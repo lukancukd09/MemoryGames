@@ -7,14 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D517EBA32DD5E40300968D48 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D517EBA22DD5E40300968D48 /* FirebaseAuth */; };
-		D517EBA52DD5E40300968D48 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D517EBA42DD5E40300968D48 /* FirebaseCore */; };
-		D517EBA72DD5E40300968D48 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D517EBA62DD5E40300968D48 /* FirebaseFirestore */; };
+		D51DC68C2DDF381F00FB3905 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC68B2DDF381F00FB3905 /* SdkPushExpress */; };
+		D51DC68F2DDF382B00FB3905 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC68E2DDF382B00FB3905 /* AppsFlyerLib */; };
+		D51DC6922DDF393900FB3905 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC6912DDF393900FB3905 /* FirebaseAnalytics */; };
+		D51DC6942DDF393900FB3905 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC6932DDF393900FB3905 /* FirebaseAnalyticsOnDeviceConversion */; };
+		D51DC6962DDF393900FB3905 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC6952DDF393900FB3905 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		D51DC6982DDF393900FB3905 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC6972DDF393900FB3905 /* FirebaseAuth */; };
+		D51DC69A2DDF393900FB3905 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC6992DDF393900FB3905 /* FirebaseCore */; };
+		D51DC69C2DDF393900FB3905 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC69B2DDF393900FB3905 /* FirebaseFirestore */; };
+		D51DC69E2DDF393900FB3905 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC69D2DDF393900FB3905 /* FirebaseFunctions */; };
+		D51DC6A02DDF393900FB3905 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC69F2DDF393900FB3905 /* FirebaseRemoteConfig */; };
+		D51DC7282DDF3A0400FB3905 /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D51DC7212DDF3A0400FB3905 /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D51DC7302DDF3A1700FB3905 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = D51DC72F2DDF3A1700FB3905 /* SdkPushExpress */; };
+		D51DC7322DDF3A3700FB3905 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51DC7312DDF3A3700FB3905 /* AdSupport.framework */; };
+		D51DC7352DDF3AB900FB3905 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D51DC7342DDF3AB900FB3905 /* PrivacyInfo.xcprivacy */; };
 		D5EE92322DDC9F62000F21EE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5EE92312DDC9F62000F21EE /* RealmSwift */; };
 		D5EE92362DDC9F95000F21EE /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D5EE92312DDC9F62000F21EE /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D51DC7262DDF3A0400FB3905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B84EE72DD33D3A00FEC3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D51DC7202DDF3A0400FB3905;
+			remoteInfo = notificationsvc;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		D51DC72D2DDF3A0400FB3905 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D51DC7282DDF3A0400FB3905 /* notificationsvc.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5EE92372DDC9F95000F21EE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +61,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D51DC7212DDF3A0400FB3905 /* notificationsvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationsvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51DC7312DDF3A3700FB3905 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D51DC7342DDF3AB900FB3905 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D5B84EEF2DD33D3A00FEC3CB /* MemoryGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D51DC72C2DDF3A0400FB3905 /* Exceptions for "notificationsvc" folder in "notificationsvc" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D51DC7202DDF3A0400FB3905 /* notificationsvc */;
+		};
 		D5B84F012DD33D3C00FEC3CB /* Exceptions for "MemoryGames" folder in "MemoryGames" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -43,6 +85,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D51DC7222DDF3A0400FB3905 /* notificationsvc */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D51DC72C2DDF3A0400FB3905 /* Exceptions for "notificationsvc" folder in "notificationsvc" target */,
+			);
+			path = notificationsvc;
+			sourceTree = "<group>";
+		};
 		D5B84EF12DD33D3A00FEC3CB /* MemoryGames */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -54,24 +104,51 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D51DC71E2DDF3A0400FB3905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51DC7302DDF3A1700FB3905 /* SdkPushExpress in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B84EEC2DD33D3A00FEC3CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51DC6A02DDF393900FB3905 /* FirebaseRemoteConfig in Frameworks */,
+				D51DC68C2DDF381F00FB3905 /* SdkPushExpress in Frameworks */,
+				D51DC6962DDF393900FB3905 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				D5EE92322DDC9F62000F21EE /* RealmSwift in Frameworks */,
-				D517EBA52DD5E40300968D48 /* FirebaseCore in Frameworks */,
-				D517EBA32DD5E40300968D48 /* FirebaseAuth in Frameworks */,
-				D517EBA72DD5E40300968D48 /* FirebaseFirestore in Frameworks */,
+				D51DC6942DDF393900FB3905 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				D51DC7322DDF3A3700FB3905 /* AdSupport.framework in Frameworks */,
+				D51DC6922DDF393900FB3905 /* FirebaseAnalytics in Frameworks */,
+				D51DC69C2DDF393900FB3905 /* FirebaseFirestore in Frameworks */,
+				D51DC6982DDF393900FB3905 /* FirebaseAuth in Frameworks */,
+				D51DC69E2DDF393900FB3905 /* FirebaseFunctions in Frameworks */,
+				D51DC69A2DDF393900FB3905 /* FirebaseCore in Frameworks */,
+				D51DC68F2DDF382B00FB3905 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51DC72E2DDF3A1700FB3905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D51DC7312DDF3A3700FB3905 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5B84EE62DD33D3A00FEC3CB = {
 			isa = PBXGroup;
 			children = (
+				D51DC7342DDF3AB900FB3905 /* PrivacyInfo.xcprivacy */,
 				D5B84EF12DD33D3A00FEC3CB /* MemoryGames */,
+				D51DC7222DDF3A0400FB3905 /* notificationsvc */,
+				D51DC72E2DDF3A1700FB3905 /* Frameworks */,
 				D5B84EF02DD33D3A00FEC3CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D5B84EEF2DD33D3A00FEC3CB /* MemoryGames.app */,
+				D51DC7212DDF3A0400FB3905 /* notificationsvc.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +165,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D51DC7202DDF3A0400FB3905 /* notificationsvc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51DC7292DDF3A0400FB3905 /* Build configuration list for PBXNativeTarget "notificationsvc" */;
+			buildPhases = (
+				D51DC71D2DDF3A0400FB3905 /* Sources */,
+				D51DC71E2DDF3A0400FB3905 /* Frameworks */,
+				D51DC71F2DDF3A0400FB3905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51DC7222DDF3A0400FB3905 /* notificationsvc */,
+			);
+			name = notificationsvc;
+			packageProductDependencies = (
+				D51DC72F2DDF3A1700FB3905 /* SdkPushExpress */,
+			);
+			productName = notificationsvc;
+			productReference = D51DC7212DDF3A0400FB3905 /* notificationsvc.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D5B84EEE2DD33D3A00FEC3CB /* MemoryGames */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B84F022DD33D3C00FEC3CB /* Build configuration list for PBXNativeTarget "MemoryGames" */;
@@ -95,20 +196,29 @@
 				D5B84EEC2DD33D3A00FEC3CB /* Frameworks */,
 				D5B84EED2DD33D3A00FEC3CB /* Resources */,
 				D5EE92372DDC9F95000F21EE /* Embed Frameworks */,
+				D51DC72D2DDF3A0400FB3905 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D51DC7272DDF3A0400FB3905 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D5B84EF12DD33D3A00FEC3CB /* MemoryGames */,
 			);
 			name = MemoryGames;
 			packageProductDependencies = (
-				D517EBA22DD5E40300968D48 /* FirebaseAuth */,
-				D517EBA42DD5E40300968D48 /* FirebaseCore */,
-				D517EBA62DD5E40300968D48 /* FirebaseFirestore */,
 				D5EE92312DDC9F62000F21EE /* RealmSwift */,
+				D51DC68B2DDF381F00FB3905 /* SdkPushExpress */,
+				D51DC68E2DDF382B00FB3905 /* AppsFlyerLib */,
+				D51DC6912DDF393900FB3905 /* FirebaseAnalytics */,
+				D51DC6932DDF393900FB3905 /* FirebaseAnalyticsOnDeviceConversion */,
+				D51DC6952DDF393900FB3905 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				D51DC6972DDF393900FB3905 /* FirebaseAuth */,
+				D51DC6992DDF393900FB3905 /* FirebaseCore */,
+				D51DC69B2DDF393900FB3905 /* FirebaseFirestore */,
+				D51DC69D2DDF393900FB3905 /* FirebaseFunctions */,
+				D51DC69F2DDF393900FB3905 /* FirebaseRemoteConfig */,
 			);
 			productName = MemoryGames;
 			productReference = D5B84EEF2DD33D3A00FEC3CB /* MemoryGames.app */;
@@ -124,6 +234,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					D51DC7202DDF3A0400FB3905 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					D5B84EEE2DD33D3A00FEC3CB = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -139,8 +252,10 @@
 			mainGroup = D5B84EE62DD33D3A00FEC3CB;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				D517EBA12DD5E40300968D48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				D5EE92302DDC9F62000F21EE /* XCRemoteSwiftPackageReference "realm-swift" */,
+				D51DC68A2DDF381F00FB3905 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */,
+				D51DC68D2DDF382B00FB3905 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D5B84EF02DD33D3A00FEC3CB /* Products */;
@@ -148,21 +263,37 @@
 			projectRoot = "";
 			targets = (
 				D5B84EEE2DD33D3A00FEC3CB /* MemoryGames */,
+				D51DC7202DDF3A0400FB3905 /* notificationsvc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D5B84EED2DD33D3A00FEC3CB /* Resources */ = {
+		D51DC71F2DDF3A0400FB3905 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5B84EED2DD33D3A00FEC3CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51DC7352DDF3AB900FB3905 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D51DC71D2DDF3A0400FB3905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B84EEB2DD33D3A00FEC3CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,19 +303,92 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D51DC7272DDF3A0400FB3905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D51DC7202DDF3A0400FB3905 /* notificationsvc */;
+			targetProxy = D51DC7262DDF3A0400FB3905 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D51DC72A2DDF3A0400FB3905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihordjereleyko.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D51DC72B2DDF3A0400FB3905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihordjereleyko.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		D5B84F032DD33D3C00FEC3CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MemoryGames/MemoryGames.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemoryGames/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SequenceGo;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your photo library to select an image for your icon";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select an image for your icon";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to show you personalized ads on the marketplaces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -196,7 +400,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihordjereleyko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -215,13 +420,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MemoryGames/MemoryGames.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemoryGames/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SequenceGo;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your photo library to select an image for your icon";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select an image for your icon";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to show you personalized ads on the marketplaces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -233,7 +441,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihordjereleyko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -369,6 +578,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D51DC7292DDF3A0400FB3905 /* Build configuration list for PBXNativeTarget "notificationsvc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51DC72A2DDF3A0400FB3905 /* Debug */,
+				D51DC72B2DDF3A0400FB3905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D5B84EEA2DD33D3A00FEC3CB /* Build configuration list for PBXProject "MemoryGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -390,12 +608,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D517EBA12DD5E40300968D48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		D51DC68A2DDF381F00FB3905 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/pushexpress/pushexpress-swift-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D51DC68D2DDF382B00FB3905 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 11.12.0;
+				minimumVersion = 6.17.0;
+			};
+		};
+		D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
 			};
 		};
 		D5EE92302DDC9F62000F21EE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
@@ -409,20 +643,60 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D517EBA22DD5E40300968D48 /* FirebaseAuth */ = {
+		D51DC68B2DDF381F00FB3905 /* SdkPushExpress */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D517EBA12DD5E40300968D48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D51DC68A2DDF381F00FB3905 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+		D51DC68E2DDF382B00FB3905 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC68D2DDF382B00FB3905 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		D51DC6912DDF393900FB3905 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D51DC6932DDF393900FB3905 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		D51DC6952DDF393900FB3905 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		D51DC6972DDF393900FB3905 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		D517EBA42DD5E40300968D48 /* FirebaseCore */ = {
+		D51DC6992DDF393900FB3905 /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D517EBA12DD5E40300968D48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
 		};
-		D517EBA62DD5E40300968D48 /* FirebaseFirestore */ = {
+		D51DC69B2DDF393900FB3905 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D517EBA12DD5E40300968D48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		D51DC69D2DDF393900FB3905 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		D51DC69F2DDF393900FB3905 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC6902DDF393900FB3905 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		D51DC72F2DDF3A1700FB3905 /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51DC68A2DDF381F00FB3905 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
 		};
 		D5EE92312DDC9F62000F21EE /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;

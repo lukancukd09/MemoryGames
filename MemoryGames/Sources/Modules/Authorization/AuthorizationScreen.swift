@@ -272,6 +272,7 @@ struct AuthorizationScreen: View {
         }
     }
 }
+
 #Preview {
     AuthorizationScreen(viewModel: .init(), path: .constant(.init()))
 }

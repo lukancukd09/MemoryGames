@@ -8,9 +8,9 @@ struct OnboardingScreen: View {
     @State private var isLoad: Bool = false
     
     var body: some View {
-        if isLoad {
-            FirstOnboardingScreen()
-        } else {
+//        if isLoad {
+//            FirstOnboardingScreen()
+//        } else {
             VStack(spacing: 0) {
                 Spacer()
                 ZStack {
@@ -46,12 +46,12 @@ struct OnboardingScreen: View {
                     .resizable()
                     .ignoresSafeArea()
             )
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    isLoad = true
-                }
-            }
-        }
+//            .onAppear {
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                    isLoad = true
+//                }
+//            }
+//        }
     }
 }
 

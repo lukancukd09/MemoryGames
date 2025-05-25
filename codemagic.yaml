@@ -11,20 +11,54 @@ workflows:
         bundle_identifier: com.ihordjereleyko
       vars:
         BUNDLE_ID: "com.ihordjereleyko"
-        XCODE_PROJECT: "MemoryGames.xcodeproj" # Убедитесь, что имя проекта указано правильно
-        XCODE_SCHEME: "MemoryGames" # Убедитесь, что имя схемы указано правильно
+        XCODE_PROJECT: "MemoryGames.xcodeproj"
+        XCODE_SCHEME: "MemoryGames"
         APP_STORE_APPLE_ID: 6746194607
-        TEAM_ID: "RN4DPSPDLM"  # Ваш Team ID
+        TEAM_ID: "RN4DPSPDLM"
       xcode: 16.0
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
         script: xcode-project use-profiles
 
-      - name: Increment build number
+      - name: Get current build number and increment
         script: |
           cd "$CM_BUILD_DIR"
-          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
-          agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+          
+          # Получить текущий номер билда из Xcode проекта
+          CURRENT_BUILD_NUMBER=$(xcodebuild -project "$XCODE_PROJECT" -showBuildSettings -configuration Release | grep -E 'CURRENT_PROJECT_VERSION' | head -1 | awk '{print $3}')
+          
+          # Если номер билда не найден, попробовать альтернативный способ
+          if [ -z "$CURRENT_BUILD_NUMBER" ] || [ "$CURRENT_BUILD_NUMBER" = "" ]; then
+            CURRENT_BUILD_NUMBER=$(agvtool what-version -terse)
+          fi
+          
+          # Если всё ещё пусто, установить 1
+          if [ -z "$CURRENT_BUILD_NUMBER" ] || [ "$CURRENT_BUILD_NUMBER" = "" ]; then
+            CURRENT_BUILD_NUMBER=1
+          fi
+          
+          echo "Current build number from Xcode: $CURRENT_BUILD_NUMBER"
+          
+          # Получить последний номер билда из App Store Connect
+          LATEST_APP_STORE_BUILD=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" || echo "0")
+          
+          echo "Latest App Store build number: $LATEST_APP_STORE_BUILD"
+          
+          # Выбрать максимальный номер и увеличить на 1
+          if [ "$CURRENT_BUILD_NUMBER" -gt "$LATEST_APP_STORE_BUILD" ]; then
+            NEW_BUILD_NUMBER=$(($CURRENT_BUILD_NUMBER + 1))
+          else
+            NEW_BUILD_NUMBER=$(($LATEST_APP_STORE_BUILD + 1))
+          fi
+          
+          echo "Setting new build number to: $NEW_BUILD_NUMBER"
+          
+          # Установить новый номер билда
+          agvtool new-version -all $NEW_BUILD_NUMBER
+          
+          # Проверить, что номер установлен корректно
+          VERIFY_BUILD_NUMBER=$(agvtool what-version -terse)
+          echo "Verified build number: $VERIFY_BUILD_NUMBER"
 
       - name: Build ipa for distribution
         script: |
